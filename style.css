@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* background-image: url('assets/myntra.png'); */
+    background-color: #f1eeee;
+    background-position: center;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.9); Adjust opacity here */
+    z-index: -1; /* Keeps the overlay behind the content */
+}
+
+
+.border {
+    border: 2px solid transparent;
+    margin: auto;
+}
+
+.border:hover {
+    border: 2px solid #393938;
+}
+
+.navbar {
+    height: 10vh;
+    display: flex;
+    font-family: poppins;
+    font-weight: 800;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    background-color: #cf2d2d;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adjust shadow properties */
+
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    font-size: 14px;
+
+}
+
+.nav-left ul {
+    display: flex;
+    gap: 23px;
+}
+
+.nav-left ul li {
+    list-style: none;
+}
+
+.nav-left .logo {
+    margin-right: 27px;
+    height: 40px;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    font-size: 14px;
+    color: white;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eae8e8;
+    margin-top: 20px;
+    height: 35px;
+    width: 330px;
+    border-radius: 4px;
+
+}
+
+.search-input {
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    background-color: #eae8e8;
+    outline: none;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.profile-op {
+    margin-top: 45px;
+    font-family: poppins;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-icon {
+    justify-content: center;
+    align-items: center;
+}
+
+.wishlist-op {
+    margin-top: 45px;
+    font-family: poppins;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wishlist-icon {
+    justify-content: center;
+    align-items: center;
+}
+
+.bag-op {
+    margin-top: 45px;
+    font-family: poppins;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bag-icon {
+    justify-content: center;
+    align-items: center;
+}
+
+.main-img .bg-logo {
+    margin: 50px;
+    height: 80vh;
+    width: 90vw;
+}
+
+.heading h2 {
+    background: linear-gradient(90deg,purple, #bb1a35 , #f7a611, #020270);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: poppins, sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-left: 40px;
+    word-spacing: 10px;
+    text-align: center;
+}
+
+
+.btn-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cf2d2d;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    position: fixed;
+    /* Fixes the button to the screen */
+    right: 20px;
+    /* Distance from the right side */
+    bottom: 20px;
+    /* Distance from the bottom */
+    z-index: 1000;
+    /* Ensures it stays on top of other elements */
+
+}
+
+.btn-top:hover{
+    background-color: #cf1c1c;
+}
+
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 45px;
+}
+
+.box {
+    height: 290px;
+    width: 16%;
+    /* border: 2px solid black; */
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #f52727;
+}
+
+.box p {
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 12px;
+    cursor: pointer;
+
+}
+
+.box h3 {
+    font-family: poppins;
+}
+
+.box-img {
+    height: 220px;
+    width: 280px;
+    background-repeat: no-repeat;
+    background-image: cover;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.sec-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-img .offer {
+    height: 35vh;
+    width: 90vw;
+    background-repeat: no-repeat;
+    margin: 50px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+footer {
+    margin: 70px;
+    font-family: poppins;
+
+}
+
+.foot-sec1 {
+    margin: 50px;
+}
+
+.foot-sec1 h4 {
+    color: #393938;
+    font-size: 14px;
+    font-weight: 1000;
+}
+
+.foot-sec1 p {
+    color: rgb(137, 136, 136);
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 32px;
+}
+
+.list {
+    margin: 50px;
+    width: 80vw;
+
+}
+
+
+.foot-sec2 {
+    margin: 50px;
+}
+
+.foot-sec2 h4 {
+    color: #393938;
+    font-size: 14px;
+    font-weight: 1000;
+}
+
+.foot-sec2 p {
+    color: rgb(137, 136, 136);
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact p {
+    font-size: 17px;
+}
+
+.foot-sec3 {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foot-sec3 h4 {
+    color: #212121;
+    font-size: 16px;
+    font-weight: 1000;
+    margin-bottom: 12px;
+}
+
+.foot-sec3 p {
+    color: #898888;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tele-sec {
+    margin-top: 100px;
+}
+
+.foot-sec4 {
+    margin: 50px;
+}
+
+.footer-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-family: poppins;
+    font-size: 14px;
+}
+
+.item a {
+    color: #898888;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.more {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    margin-bottom: 15px;
+    margin-right: 3px;
+}
+
+.more2 {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 46px;
+}
+
+.addition {
+    display: flex;
+    flex-direction: column;
+}

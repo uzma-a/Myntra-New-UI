@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72deXSuQEm4biPFKNe9_sGv1eBgujn2tmoA&s"
+                    class="logo" alt="">
+                <ul>
+                    <li>MEN</li>
+                    <li>WOMEN</li>
+                    <li>KIDS</li>
+                    <li>HOME & KITCHEN</li>
+                    <li>BEAUTY</li>
+                    <li>STUDIO</li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+
+                <div class="search">
+                    <div class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="26"
+                            color="#746f6f" fill="none">
+                            <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <input placeholder="Search for products, brands and more" class="search-input">
+                </div>
+
+                <div class="profile-op">
+                    <div class="profile-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="24" color="white"
+                            fill="none">
+                            <path
+                                d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="profile">Profile</div>
+                </div>
+
+                <div class="wishlist-op">
+                    <div class="wishlist-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="24" color="white"
+                            fill="none">
+                            <path
+                                d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="wish">Wishlist</div>
+                </div>
+
+                <div class="bag-op">
+                    <div class="bag-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="24" color="white"
+                            fill="none">
+                            <path
+                                d="M3.06164 14.4413L3.42688 12.2985C3.85856 9.76583 4.0744 8.49951 4.92914 7.74975C5.78389 7 7.01171 7 9.46734 7H14.5327C16.9883 7 18.2161 7 19.0709 7.74975C19.9256 8.49951 20.1414 9.76583 20.5731 12.2985L20.9384 14.4413C21.5357 17.946 21.8344 19.6983 20.9147 20.8491C19.995 22 18.2959 22 14.8979 22H9.1021C5.70406 22 4.00504 22 3.08533 20.8491C2.16562 19.6983 2.4643 17.946 3.06164 14.4413Z"
+                                stroke="currentColor" stroke-width="2" />
+                            <path
+                                d="M7.5 9L7.71501 5.98983C7.87559 3.74176 9.7462 2 12 2C14.2538 2 16.1244 3.74176 16.285 5.98983L16.5 9"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="bag">Bag</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-img">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ed3c0c41363649.57a2d3d8e3d96.jpg"
+                class="bg-logo" alt="">
+        </div>
+
+        <div class="heading">
+            <h2>MEDAL WORTHY BRANDS TO BAG</h2>
+        </div>
+
+        <div class="shop-section">
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box1-img.jpg')"></div>
+                    <p>Best selling casuals</p>
+                    <h3>Min. 40% OFF</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box2-img.jpg')"></div>
+                    <p>International Picks</p>
+                    <h3>Min. 55% OFF</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box3-img.jpg')"></div>
+                    <p>Trending Footwears</p>
+                    <h3>Upto 65% OFF</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box4-img.jpg')"></div>
+                    <p>Work-Ready style</p>
+                    <h3>30-50% OFF</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box5-img.jpg')"></div>
+                    <p>Designer Saree</p>
+                    <h3>Under 1200</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box6-img.jpg')"></div>
+                    <p>Trolly bags</p>
+                    <h3>STARTING Rs.850</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box7-img.jpg')"></div>
+                    <p>Night suits</p>
+                    <h3>UPTO 45% OFF</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box8-img.jpg')"></div>
+                    <p>Smart-work wears</p>
+                    <h3>Min. 24% OFF</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box9-img.jpg')"></div>
+                    <p>Best selling casuals</p>
+                    <h3>Min. 40% OFF</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box10-img.jpg')"></div>
+                    <p>Elegant Ethnic Styles</p>
+                    <h3>Min. 30% OFF</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box11-img.jpg')"></div>
+                    <p>Elevated Picks</p>
+                    <h3>40% OFF</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box12-img.jpg')"></div>
+                    <p>Denim T-shirts</p>
+                    <h3>Starting at Rs. 700</h3>
+                </div>
+            </div>
+            <div class="btn1">
+                <button class="btn-top" onclick="scrollToTop()">Back to Top  <img src="assets/top.svg" alt=""></button>
+               
+            </div>
+        </div>
+
+        <div class="heading">
+            <h2>GRAND GLOBAL BRANDS</h2>
+        </div>
+
+        <div class="shop-section">
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box13-img.jpg')"></div>
+                    <p>Hottest pairs</p>
+                    <h3>Min. 30% OFF</h3>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box14-img.jpg')"></div>
+                    <p>Stunning Footwear</p>
+                    <h3>UPTO 60% OFF</h3>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box15-img.jpg')"></div>
+                    <p>Sneakers & More</p>
+                    <h3>Min. 40% OFF</h3>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box16-img.jpg')"></div>
+                    <p>Trend Forward Collection</p>
+                    <h3>Upto 40% OFF</h3>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box17-img.jpg')"></div>
+                    <p>Laid-back Styles</p>
+                    <h3>Mini 30% OFF</h3>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box18-img.jpg')"></div>
+                    <p>Cool Casuals</p>
+                    <h3>Flat 45% OFF</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="heading">
+            <h2>SHOP BY CATEGORY</h2>
+        </div>
+
+        <div class="sec-img">
+            <img src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/27/97b7bd6e-8373-4b32-aec9-c511ae1a1f761724757504705-App-Install-Banner.jpg"
+                class="offer" alt="">
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div class="footer">
+            <div class="foot-sec1">
+                <h4>ONLINE SHOPPING MADE EASY AT MYNTRA</h4>
+                <p>If you would like to experience the best of online shopping for men, women and kids in India, you are
+                    at the right place. Myntra is the ultimate destination for fashion and lifestyle, being host to a
+                    wide array of merchandise including clothing, footwear, accessories, jewellery, personal care
+                    products and more. It is time to redefine your style statement with our treasure-trove of trendy
+                    items. Our online store brings you the latest in designer products straight out of fashion houses.
+                    You can shop online at Myntra from the comfort of your home and get your favourites delivered right
+                    to your doorstep.</p>
+            </div>
+
+            <div class="foot-sec1">
+                <h4>BEST ONLINE SHOPPING SITE IN INDIA FOR FASHION</h4>
+                <p>Be it clothing, footwear or accessories, Myntra offers you the ideal combination of fashion and
+                    functionality for men, women and kids. You will realise that the sky is the limit when it comes to
+                    the types of outfits that you can purchase for different occasions.</p>
+            </div>
+
+            <div class="foot-sec1">
+                <div class="list">
+                    <p>1. <b style="color: #393938; font-weight: 900 ;">Smart men’s clothing</b> - At Myntra you will
+                        find myriad options in smart formal shirts and trousers, cool T-shirts and jeans, or kurta and
+                        pyjama combinations for men. Wear your attitude with printed T-shirts. Create the back-to-campus
+                        vibe with varsity T-shirts and distressed jeans. Be it gingham, buffalo, or window-pane style,
+                        checked shirts are unbeatably smart. Team them up with chinos, cuffed jeans or cropped trousers
+                        for a smart casual look. Opt for a stylish layered look with biker jackets. Head out in cloudy
+                        weather with courage in water-resistant jackets. Browse through our innerwear section to find
+                        supportive garments which would keep you confident in any outfit.</p>
+
+                    <p>2. <b style="color: #393938; font-weight: 900 ;">Trendy women’s clothing</b>- Online shopping for
+                        women at Myntra is a mood-elevating experience. Look hip and stay comfortable with chinos and
+                        printed shorts this summer. Look hot on your date dressed in a little black dress, or opt for
+                        red dresses for a sassy vibe. Striped dresses and T-shirts represent the classic spirit of
+                        nautical fashion. Choose your favourites from among Bardot, off-shoulder, shirt-style, blouson,
+                        embroidered and peplum tops, to name a few. Team them up with skinny-fit jeans, skirts or
+                        palazzos. Kurtis and jeans make the perfect fusion-wear combination for the cool urbanite. Our
+                        grand sarees and lehenga-choli selections are perfect to make an impression at big social events
+                        such as weddings. Our salwar-kameez sets, kurtas and Patiala suits make comfortable options for
+                        regular wear.</p>
+
+                    <p>3. <b style="color: #393938; font-weight: 900 ;">Fashionable Footwears</b> - While clothes maketh
+                        the man, the type of footwear you wear reflects your personality. We bring you an exhaustive
+                        lineup of options in casual shoes for men, such as sneakers and loafers. Make a power statement
+                        at work dressed in brogues and oxfords. Practice for your marathon with running shoes for men
+                        and women. Choose shoes for individual games such as tennis, football, basketball, and the like.
+                        Or step into the casual style and comfort offered by sandals, sliders, and flip-flops. Explore
+                        our lineup of fashionable footwear for ladies, including pumps, heeled boots, wedge-heels, and
+                        pencil-heels. Or enjoy the best of comfort and style with embellished and metallic flats. </p>
+
+                    <p>4. <b style="color: #393938; font-weight: 900 ;">Stylish accessories</b>- Myntra is one of the
+                        best online shopping sites for classy accessories that perfectly complement your outfits. You
+                        can select smart analogue or digital watches and match them up with belts and ties. Pick up
+                        spacious bags, backpacks, and wallets to store your essentials in style. Whether you prefer
+                        minimal jewellery or grand and sparkling pieces, our online jewellery collection offers you many
+                        impressive options. </p>
+
+                    <p>5. <b style="color: #393938; font-weight: 900 ;">Fun and Frolic</b> - Online shopping for kids at
+                        Myntra is a complete joy. Your little princess is going to love the wide variety of pretty
+                        dresses, ballerina shoes, headbands and clips. Delight your son by picking up sports shoes,
+                        superhero T-shirts, football jerseys and much more from our online store. Check out our lineup
+                        of toys with which you can create memories to cherish. </p>
+
+                    <p>6. <b style="color: #393938; font-weight: 900 ;">Beauty Begins here</b> - You can also refresh,
+                        rejuvenate and reveal beautiful skin with personal care, beauty and grooming products from
+                        Myntra. Our soaps, shower gels, skin care creams, lotions and other ayurvedic products are
+                        specially formulated to reduce the effect of aging and offer the ideal cleansing experience.
+                        Keep your scalp clean and your hair uber-stylish with shampoos and hair care products. Choose
+                        makeup to enhance your natural beauty. </p>
+
+                    <p>Myntra is one of the best online shopping sites in India which could help transform your living
+                        spaces completely. Add colour and personality to your bedrooms with bed linen and curtains. Use
+                        smart tableware to impress your guest. Wall decor, clocks, photo frames and artificial plants
+                        are sure to breathe life into any corner of your home.</p>
+                </div>
+
+                <div class="foot-sec1">
+                    <h4>MYNTRA APP</h4>
+                    <p>Myntra, India’s no. 1 online fashion destination justifies its fashion relevance by bringing
+                        something new and chic to the table on the daily. Fashion trends seem to change at lightning
+                        speed, yet the Myntra shopping app has managed to keep up without any hiccups. In addition,
+                        Myntra has vowed to serve customers to the best of its ability by introducing its first-ever
+                        loyalty program, The Myntra Insider. Gain access to priority delivery, early sales, lucrative
+                        deals and other special perks on all your shopping with the Myntra app. Download the Myntra app
+                        on your Android or IOS device today and experience shopping like never before!</p>
+
+                    <h4>HISTORY OF MYNTRA</h4>
+                    <p>Becoming India’s no. 1 fashion destination is not an easy feat. Sincere efforts, digital
+                        enhancements and a team of dedicated personnel with an equally loyal customer base have made
+                        Myntra the online platform that it is today. The original B2B venture for personalized gifts was
+                        conceived in 2007 but transitioned into a full-fledged ecommerce giant within a span of just a
+                        few years. By 2012, Myntra had introduced 350 Indian and international brands to its platform,
+                        and this has only grown in number each passing year. Today Myntra sits on top of the online
+                        fashion game with an astounding social media following, a loyalty program dedicated to its
+                        customers, and tempting, hard-to-say-no-to deals.</p>
+                    <p>The Myntra shopping app came into existence in the year 2015 to further encourage customers’
+                        shopping sprees. Download the app on your Android or IOS device this very minute to experience
+                        fashion like never before</p>
+
+                    <h4>SHOP ONLINE AT MYNTRA WITH COMPLETE CONVENIENCE</h4>
+                    <p>Another reason why Myntra is the best of all online stores is the complete convenience that it
+                        offers. You can view your favourite brands with price options for different products in one
+                        place. A user-friendly interface will guide you through your selection process. Comprehensive
+                        size charts, product information and high-resolution images help you make the best buying
+                        decisions. You also have the freedom to choose your payment options, be it card or
+                        cash-on-delivery. The 14-day returns policy gives you more power as a buyer. Additionally, the
+                        try-and-buy option for select products takes customer-friendliness to the next level.</p>
+
+                    <p>Enjoy the hassle-free experience as you shop comfortably from your home or your workplace. You
+                        can also shop for your friends, family and loved-ones and avail our gift services for special
+                        occasions.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="foot-sec2">
+                <h4>Popular Searches</h4>
+                <p>Makeup Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags |
+                    Ladies Watches | Bags | Sport Shoes | Reebok Shoes | Puma Shoes | Boxers | Wallets | Tops | Earrings
+                    | Fastrack Watches Kurtis | Nike | Smart Watches | Titan Watches | Designer Blouse | Gowns | Rings |
+                    Cricket Shoes | Forever 21 | Eye Makeup | Photo Frames | Punjabi Suits | Bikini | Myntra Fashion
+                    Show | Lipstick | Saree | Watches Dresses Lehenga | Nike Shoes | Goggles | Bras| Suit | Chinos |
+                    Shoes | Adidas Shoes | Woodland Shoes | Jewellery | Designers Sarees</p>
+
+                <div class="contact">
+                    <p>In case of any Concern, <a href="Contact.html"><b>Contact Us</b></a></p>
+                    <p>© 2024 www.myntra.com. All rights reserved.</p>
+                    <p>A Flipkart Company</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="foot-sec3">
+                <div class="add-sec">
+                    <h4>Registered Office Address</h4>
+                    <p>Buildings Alyssa,</p>
+                    <p>Begonia and Clover situated in Embassy Tech Village,</p>
+                    <p>Outer Ring Road,</p>
+                    <p>Devarabeesanahalli Village,</p>
+                    <p>Varthur Hobli,</p>
+                    <p>Bengaluru – 560103, India</p>
+                </div>
+
+                <div class="tele-sec">
+                    <p>CIN: U72300KA2007PTC041799</p>
+                    <p>Telephone: <a href="number">+91-80-61561999</a></p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="foot-sec4">
+                <div class="footer-item">
+                    <div class="item">
+                        <h4>ONLINE SHOPPING</h4>
+                        <a href="men.html">Men</a>
+                        <a href="women.html">Women</a>
+                        <a href="kids.html">Kids</a>
+                        <a href="home.html">Home & Living</a>
+                        <a href="beauty.html">Beauty</a>
+                        <a href="card.html">Gift Cards</a>
+                        <a href="insider.html">Myntra Insider</a>
+                    </div>
+
+                    <div class="item">
+                        <h4>CUSTOMER POLICY</h4>
+                        <a href="contactus.html">Contact us</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="t&c.html">T&C</a>
+                        <a href="termsOfUse.html">Terms of Use</a>
+                        <a href="trackOrder.html">Track Orders</a>
+                        <a href="shiiping.html">Shipping</a>
+                        <a href="Cancellation.html">Cancellation</a>
+                        <a href="Returns.html">Returns</a>
+                        <a href="PrivacyPolicy.html">Privacy Policy</a>
+                        <a href="Cancellation.html">Cancellation</a>
+                    </div>
+
+                    <div class="item">
+                        <h4>Useful Links</h4>
+                        <a href="Blog.html">Blog</a>
+                        <a href="Careers.html">Careers</a>
+                        <a href="SiteMap.html">Site Map</a>
+                        <a href="CorporateInformation.html">Corporate Information</a>
+                        <a href="Whitehat.html">Whitehat</a>
+                        <a href="Cleartrip.html">Cleartrip</a>
+                    </div>
+
+                    <div class="addition">
+                        <div class="more">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#746f6f" fill="none">
+                                <path d="M18.9905 19H19M18.9905 19C18.3678 19.6175 17.2393 19.4637 16.4479 19.4637C15.4765 19.4637 15.0087 19.6537 14.3154 20.347C13.7251 20.9374 12.9337 22 12 22C11.0663 22 10.2749 20.9374 9.68457 20.347C8.99128 19.6537 8.52349 19.4637 7.55206 19.4637C6.76068 19.4637 5.63218 19.6175 5.00949 19C4.38181 18.3776 4.53628 17.2444 4.53628 16.4479C4.53628 15.4414 4.31616 14.9786 3.59938 14.2618C2.53314 13.1956 2.00002 12.6624 2 12C2.00001 11.3375 2.53312 10.8044 3.59935 9.73817C4.2392 9.09832 4.53628 8.46428 4.53628 7.55206C4.53628 6.76065 4.38249 5.63214 5 5.00944C5.62243 4.38178 6.7556 4.53626 7.55208 4.53626C8.46427 4.53626 9.09832 4.2392 9.73815 3.59937C10.8044 2.53312 11.3375 2 12 2C12.6625 2 13.1956 2.53312 14.2618 3.59937C14.9015 4.23907 15.5355 4.53626 16.4479 4.53626C17.2393 4.53626 18.3679 4.38247 18.9906 5C19.6182 5.62243 19.4637 6.75559 19.4637 7.55206C19.4637 8.55858 19.6839 9.02137 20.4006 9.73817C21.4669 10.8044 22 11.3375 22 12C22 12.6624 21.4669 13.1956 20.4006 14.2618C19.6838 14.9786 19.4637 15.4414 19.4637 16.4479C19.4637 17.2444 19.6182 18.3776 18.9905 19Z" stroke="currentColor" stroke-width="1.5" />
+                                <path d="M9 12.8929C9 12.8929 10.2 13.5447 10.8 14.5C10.8 14.5 12.6 10.75 15 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                               </svg>
+                            </div>
+                            <div class="para"> 
+                                <p><b>100% ORIGINAL</b> guarantee for</p>
+                                <p>all products at myntra.com</p>
+                            </div>
+                        </div>
+
+                        <div class="more2">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" color="#746f6f" fill="none">
+                                    <path d="M19 9H6.65856C5.65277 9 5.14987 9 5.02472 8.69134C4.89957 8.38268 5.25517 8.01942 5.96637 7.29289L8.21091 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M5 15H17.3414C18.3472 15 18.8501 15 18.9753 15.3087C19.1004 15.6173 18.7448 15.9806 18.0336 16.7071L15.7891 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="para"> 
+                                <p><b>Return within 14days</b> of</p>
+                                <p>receiving your order</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
